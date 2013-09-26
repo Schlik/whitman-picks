@@ -35,6 +35,7 @@ public void doPost(HttpServletRequest req, HttpServletResponse resp)
 	Key userPicksKey = KeyFactory.createKey("UserEmail", email_address);
 	Entity my_picks = new Entity("picks", userPicksKey);
 	//Since we only have an email as a key, need current week to filter picks
+	my_picks.setProperty("user_email", email_address);
 	my_picks.setProperty("week_number", CURRENT_WEEK);
 	
 	int i = 1;
@@ -44,6 +45,7 @@ public void doPost(HttpServletRequest req, HttpServletResponse resp)
 		String current_game = "game" + i;
 		String content = req.getParameter(current_game);
 		if (content == null) {
+			i--;
 			break;
 		}
 		else
@@ -58,7 +60,9 @@ public void doPost(HttpServletRequest req, HttpServletResponse resp)
     datastore.put(my_picks);
 
 
-    resp.sendRedirect("/pickResults.jsp?userEmail=" + email_address);
+    resp.sendRedirect("/pickResults.jsp?USER_EMAIL=" + email_address +
+    							        "&CURRENT_WEEK=" + CURRENT_WEEK + 
+    							        "&TOTAL_GAMES=" + i );
 }
 
 
