@@ -37,9 +37,8 @@
 
      int counter = 1;
      for (Entity pick : all_picks ) {
-    	user_email = (String)pick.getProperty("email_address");
     	
-    	String output = "<p>" + user_email;
+    	String output = "<p>" + pick.getProperty("user_email");
     	
         for( int i = 1; i < total_games; i++){
         	String game_name = "game" + i;
