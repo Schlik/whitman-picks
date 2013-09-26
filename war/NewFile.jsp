@@ -19,7 +19,7 @@
 <tr>
 <td><input type="radio" name="game1" value="1" checked></td>
 <td>EAGLES</td>
-<td>    3  </td>
+<td>    2  </td>
 <td> Chiefs </td>
 <td><input type="radio" name="game1" value="2"></td>
 </tr>
