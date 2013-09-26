@@ -40,7 +40,7 @@
     	
     	String output = "<p>" + pick.getProperty("user_email");
     	
-        for( int i = 1; i < total_games; i++){
+        for( int i = 1; i <= total_games; i++){
         	String game_name = "game" + i;
         	output += ", " + pick.getProperty(game_name);
         }
