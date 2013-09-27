@@ -6,7 +6,34 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <html>
+<head>
+<title>Wittman Picks</title>
+<link rel="stylesheet" href="/stylesheets/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+<link rel="stylesheet" href="/stylesheets/liquid-slider.css">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.touchSwipe.min.js"></script>
+<script src="/js/jquery.liquid-slider.min.js"></script>
+</head>
 <body>
+
+<div class="liquid-slider" id="weeks">
+	<div>
+		<h2>Week 1</h2>
+	</div>
+	<div>
+		<h2>Week 2</h2>
+	</div>
+	<div>
+		<h2>Week 3</h2>
+	</div>
+	<div>
+		<h2>Week 4</h2>
+	</div>
+</div>
 
 <h1>NFL Week 3</h1>
 
@@ -19,7 +46,7 @@
 <tr>
 <td><input type="radio" name="game1" value="1" checked></td>
 <td>EAGLES</td>
-<td>    2  </td>
+<td>    5  </td>
 <td> Chiefs </td>
 <td><input type="radio" name="game1" value="2"></td>
 </tr>
@@ -155,4 +182,11 @@ E-mail: <input type="email" name="picker_email">
 </form> 
   
 </body>
+<footer>
+	<script>
+		$(function(){
+			$('#weeks').liquidSlider({autoSlide:true});
+		});
+	</script>
+</footer>
 </html>

@@ -15,8 +15,35 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <html>
+<head>
+<title>Wittman Picks - Results</title>
+<link rel="stylesheet" href="/stylesheets/ui-lightness/jquery-ui-1.10.3.custom.min.css" /></head>
+<link rel="stylesheet" href="/stylesheets/liquid-slider.css">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.touchSwipe.min.js"></script>
+<script src="/js/jquery.liquid-slider.min.js"></script>
 <body>
 
+<div class="liquid-slider" id="weeks">
+	<div>
+		<h2>Week 1</h2>
+	</div>
+	<div>
+		<h2>Week 2</h2>
+	</div>
+	<div>
+		<h2>Week 3</h2>
+	</div>
+	<div>
+		<h2>Week 3</h2>
+	</div>
+</div>
+
+<h1>Pick Results</h1>
 <%
     String user_email = request.getParameter("USER_EMAIL");
 	int current_week = Integer.parseInt(request.getParameter("CURRENT_WEEK" ));
@@ -51,6 +78,12 @@
     
         	
 %>
-  
 </body>
+<footer>
+	<script>
+		$(function(){
+			$('#weeks').liquidSlider({autoSlide:true});
+		});
+	</script>
+</footer>
 </html>
