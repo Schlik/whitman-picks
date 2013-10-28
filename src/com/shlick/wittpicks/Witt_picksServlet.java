@@ -14,8 +14,10 @@ public class Witt_picksServlet extends HttpServlet {
       User user = userService.getCurrentUser();
 
       if (user != null) {
-          resp.setContentType("text/plain");
-          resp.getWriter().println("Hello, " + user.getNickname());
+    	  //resp.setCharacterEncoding("utf-8");
+          //resp.setContentType("text/plain");
+          //resp.getWriter().println("Hello, " + user.getNickname());
+    	  resp.sendRedirect( "/fetchTeams" );
       } else {
           resp.sendRedirect(userService.createLoginURL(req.getRequestURI()));
       }

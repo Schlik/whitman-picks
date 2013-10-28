@@ -1,0 +1,194 @@
+
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	color:#333;
+	width:980px;
+	margin: 5px auto;
+	padding: 0;
+}
+
+.fg-wrapper
+{
+	display:block;
+	margin:0 auto;
+	width:100%;
+}
+
+.header-wrapper 
+{
+	clear: both;
+	display: block;
+	line-height:1.4em !important;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+#main-menu
+{
+	margin: 0 auto;
+	line-heigth: 1.2em;
+}
+nav
+{
+	display:inline-block;
+	background-color:#666;
+	color:#eee;
+	width:100%;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+nav ul, nav ul li
+{
+	display:inline-block;
+	float:left;
+	list-style: none;
+	padding-left:10px;
+}
+nav li a
+{
+	text-decoration:none;
+	color:#eee;
+}
+nav li a:hover
+{
+	background-color:#eee;
+	color:#333;
+}
+td img {
+	text-align:center;
+	vertical-align:middle;
+}
+
+.active-week
+{
+	background-color:#eee;
+	color:#333;
+}
+.results {
+	background-color: #fff;
+	color:#333;
+}
+
+#games {
+	margin: 0 auto;
+	border: 1px solid #333;
+}
+#games tr, #games td, #games th {
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+.fg-center
+{
+	text-align: center;
+}
+.clearboth
+{
+	display:block;
+	clear: both;
+	line-height:0;
+}
+
+#top-right-nav {
+	display: inline-block;
+	float: right;
+	color: #333;
+	font-size:.8em;
+	margin-right:90px;
+}
+#top-right-nav a {
+	text-decoration: none;
+	color:#333;
+}
+#top-right-nav a:hover {
+	background:#333;
+	color:#ccc;
+}
+#slider-id {
+	display: none;
+}
+.slider-height {
+	height:600px !important;
+}
+#datepicker {
+	background:#ccc;
+	color:#333;
+}
+
+.game, #pick-submit fieldset {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	border:0;
+}
+
+#pick-submit
+{
+	margin: 0 auto;
+	text-align: center;
+	border:0;
+	padding: 20px;
+	border-radius: 10px;
+	background: #ccc;
+}
+#idsubmit
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#login-form
+{
+	margin: 10px auto;
+	width: 340px;	
+	border: 1px solid #333;
+	border-radius: 10px;
+	background: #ccc;
+}
+
+form
+{
+	border: 0;
+	padding: 20px;
+}
+
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+input.submit { display: inline-block; margin-bottom:12px; padding: .4em; }
+fieldset { padding:0; border:0; margin:25px auto; }
+
+section
+{
+	width: 100%;
+	margin: 0 auto;
+}
+#register-form
+{
+	font-size: 80%;
+	margin: 10px auto;
+	width: 400px;	
+	heigth: 600px;
+	border: 1px solid #333;
+	border-radius: 10px;
+	background: #ccc;
+}
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+
+#spreadtable
+{
+	border: 1px solid #333;
+}
+#spreadtable tr, #spreadtable td, #spreadtable th {
+	border: 1px solid #333;
+	padding: 10px;
+}
+
