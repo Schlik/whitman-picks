@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.fgomes.data.*" %>
+<%@ page import="com.shlick.data.*" %>
 <!doctype html>
 <html lang="en">
 <head>
