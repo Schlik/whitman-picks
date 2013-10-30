@@ -10,8 +10,8 @@
 <%@ page import="com.google.appengine.api.datastore.Entity" %>
 <%@ page import="com.google.appengine.api.datastore.Key" %>
 <%@ page import="com.google.appengine.api.datastore.KeyFactory" %>
-<%@ page import="com.fgomes.util.*" %>
-<%@ page import="com.fgomes.data.*" %>
+<%@ page import="com.shlick.util.*" %>
+<%@ page import="com.shlick.data.*" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <!DOCTYPE html>
